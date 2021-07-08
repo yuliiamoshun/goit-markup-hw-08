@@ -1,7 +1,25 @@
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .list {
@@ -340,11 +358,13 @@ img {
 }
 
 .footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 15px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    text-align: center;
+  }
 }
 
 .contacts-footer__logo-web {
@@ -379,8 +399,7 @@ img {
 }
 
 .socialmedia-footer {
-  padding-top: 12px;
-  margin-left: 70px;
+  padding-top: 60px;
 }
 
 .socialmedia-footer__list {
@@ -447,14 +466,10 @@ img {
 }
 
 .subscription {
-  margin-left: 93px;
-  padding-top: 12px;
+  padding-top: 60px;
 }
 
 .subscription__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -503,15 +518,11 @@ img {
 }
 
 .subscription__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 200px;
-  height: 50px;
-  padding-left: 29px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;

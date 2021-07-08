@@ -1,6 +1,10 @@
 .work-section {
-    padding-top: 0px;
-    padding-bottom: 94px;
+    padding-top: 94px;
+
+    @media screen and (max-width: $tablet) {
+      display: none;
+      
+    }
 
     &__heading {
         margin-bottom: 50px;
