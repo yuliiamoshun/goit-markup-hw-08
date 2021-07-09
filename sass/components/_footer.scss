@@ -6,13 +6,47 @@
     color: rgba(255, 255, 255, 0.6);
 
     &__container {
-        display: flex;
         padding-top: 60px;
         padding-bottom: 60px;
+        justify-content: center;
+
+        @media screen and (max-width: 1199px) {
+          text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+          display: flex;
+          align-items: baseline;
+        }
       }
+
+    &__flex {
+      padding-bottom: 60px;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        padding-bottom: 0px;
+      }
+    }
   }
 
 .contacts-footer {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+    margin-right: 70px;
+  }
 
     &__logo-web{
         color: $accent-color;
@@ -50,8 +84,10 @@
 }
 
 .socialmedia-footer {
-    padding-top: 12px;
-    margin-left: 70px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
     &__list {
         display: flex;
@@ -115,19 +151,18 @@
   }
 
 .subscription {
-    margin-left: 93px;
-    padding-top: 12px;
 
-    &__form {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-top: 20px;
-      width: 570px;
-      height: 50px;
-    }
+     &__form {
+    
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        // margin-top: 20px;
+        height: 50px;
+        }
+      }
 
     &__heading {
+      margin-bottom: 20px;
       font-weight: bold;
       font-size: 14px;
       line-height: 1.142;
@@ -138,10 +173,22 @@
 
     &__email {
       display: flex;
+      margin-bottom: 20px;
       padding-left: 16px;
       margin-right: 12px;
-      width: 358px;
+      width: 100%;
       height: 50px;
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media screen and (min-width:1200px) {
+        width: 358px;
+        margin-bottom: 0px
+      }
     
       border: 1px solid rgba(255, 255, 255, 0.3);
       box-sizing: border-box;
@@ -162,10 +209,18 @@
     }
 
     &__button {
-      display: flex;
       width: 200px;
       height: 50px;
       padding-left: 29px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    
+      @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
     
       font-weight: bold;
       font-size: 16px;

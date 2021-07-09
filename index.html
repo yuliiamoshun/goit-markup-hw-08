@@ -14,21 +14,21 @@
 </head>
 <body>
     <!-- Шапка страницы -->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container header__container">
             <nav class="navigation"> 
-                <a href="./index.html" class="navigation__logo-web">Web<span class="navigation__logo-studio">Studio</span></a>
+                <a href="./index.html" class="navigation__logo-web">Web<span class="navigation__logo-studio">Studio</span></a> -->
 
                 <!-- Навигация на другие страницы-->
-                <ul class="navigation__list list">
+                <!-- <ul class="navigation__list list">
                     <li class="navigation__item navigation__item--active"><a href="/index.html" class="navigation__link  navigation__link--active link">Студия</a></li>
                     <li class="navigation__item"><a href="./portfolio.html" class="navigation__link  link">Портфолио</a></li>
                     <li class="navigation__item"><a href="#contacts" class="navigation__link link">Контакты</a></li>
                 </ul>
-            </nav>
+            </nav> -->
 
             <!-- Контакты -->
-            <div class="contacts-header">
+            <!-- <div class="contacts-header">
                 <ul class="contacts-header__list list">
                     <li class="contacts-header__item"><a class="contacts-header__link link" href="mailto:info@devstudio.com">
                         <svg class="contacts-header__icon" width="16" height="12">
@@ -39,7 +39,7 @@
                             <use href="./images/icons-sprite.svg#icon-phone-grey"></use>
                         </svg>+38 096 111 11 11</a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </header>
 
@@ -124,7 +124,11 @@
                 <h2 class="team-section__heading">Наша команда</h2>
                 <ul class="team-section__list list">
                     <li class="team-section__box">
-                        <img src="./images/igor.jpeg" alt="Фото сотрудника" width="270">
+                        
+                        <img 
+                        srcset="./images/team/team_1_mobile.jpeg 1x, ./images/team/team_1_mobile@2x.jpeg 2x"
+                        src="./images/team/team_1_mobile.jpeg" alt="Фото сотрудника"
+                        >  
                         <h3 class="team-section__name">Игорь Демьяненко</h3>
                         <p class="team-section__job-position" lang="en">Product Designer</p>
                         <ul class="team-section__icons-list list">
@@ -159,7 +163,10 @@
                         </ul>
                     </li>
                     <li class="team-section__box">
-                        <img src="./images/olga.jpeg" alt="Фото сотрудника" width="270">
+                        <img 
+                        srcset="./images/team/team_2_mobile.jpeg 1x, ./images/team/team_2_mobile@2x.jpeg 2x"
+                        src="./images/team/team_2_mobile.jpeg" alt="Фото сотрудника"
+                        >
                         <h3 class="team-section__name">Ольга Репина</h3>
                         <p class="team-section__job-position" lang="en">Frontend Developer</p>
                         <ul class="team-section__icons-list list">
@@ -194,7 +201,10 @@
                         </ul>
                     </li>
                     <li class="team-section__box">
-                        <img src="./images/nikolai.jpeg" alt="Фото сотрудника" width="270">
+                        <img 
+                        srcset="./images/team/team_3_mobile.jpeg 1x, ./images/team/team_3_mobile@2x.jpeg 2x"
+                        src="./images/team/team_3_mobile.jpeg" alt="Фото сотрудника"
+                        >
                         <h3 class="team-section__name">Николай Тарасов</h3>
                         <p class="team-section__job-position" lang="en">Marketing</p>
                         <ul class="team-section__icons-list list">
@@ -229,7 +239,9 @@
                         </ul>
                     </li>
                     <li class="team-section__box">
-                        <img src="./images/mikhail.jpeg" alt="Фото сотрудника" width="270">
+                        <img 
+                        srcset="./images/team/team_4_mobile.jpeg 1x, ./images/team/team_4_mobile@2x.jpeg 2x"
+                        src="./images/team/team_4_mobile.jpeg" alt="Фото сотрудника">
                         <h3 class="team-section__name">Михаил Ермаков</h3>
                         <p class="team-section__job-position" lang="en">UI Designer</p>
                         <ul class="team-section__icons-list list">
@@ -323,71 +335,73 @@
     <footer class="footer">
             <div class="footer__container container">
                 <!-- Контакты -->
-                <div class="contacts-footer" id="">
-                    <a href="./index.html" class="contacts-footer__logo-web">Web<span class="contacts-footer__logo-studio">Studio</span></a>
-                    
-                    <div class="contacts-footer__box">
-                        <ul class="contacts-footer__list list">
-                            <li class="contacts-footer__item"><address class="contacts-footer__address link">г. Киев, пр-т Леси Украинки, 26</address></li>
-                            <li class="contacts-footer__item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                            <li class="contacts-footer__item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <div class="footer__flex">
+                    <div class="contacts-footer" id="">
+                        <a href="./index.html" class="contacts-footer__logo-web">Web<span class="contacts-footer__logo-studio">Studio</span></a>
+                        
+                        <div class="contacts-footer__box">
+                            <ul class="contacts-footer__list list">
+                                <li class="contacts-footer__item"><address class="contacts-footer__address link">г. Киев, пр-т Леси Украинки, 26</address></li>
+                                <li class="contacts-footer__item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                                <li class="contacts-footer__item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Социальные сети -->
+                    <div class="socialmedia-footer">
+                        <h2 class="socialmedia-footer__heading">Присоединяйтесь</h2>
+                        <ul class="socialmedia-footer__list list"> 
+                            <li class="socialmedia-footer__item">
+                                <a class="socialmedia-footer__link" href="https://www.instagram.com/" aria-label="Instagram">
+                                    <svg class="socialmedia-footer__icon" width="20" height="20">
+                                        <use href="./images/icons-sprite.svg#icon-instagram-grey"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socialmedia-footer__item">
+                                <a class="socialmedia-footer__link" href="https://twitter.com/" aria-label="Twitter">
+                                    <svg class="socialmedia-footer__icon" width="20" height="20">
+                                        <use href="./images/icons-sprite.svg#icon-twitter-grey"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socialmedia-footer__item">
+                                <a class="socialmedia-footer__link" href="https://www.facebook.com/" aria-label="Facebook">
+                                    <svg class="socialmedia-footer__icon" width="20" height="20">
+                                        <use href="./images/icons-sprite.svg#icon-facebook-grey"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socialmedia-footer__item">
+                                <a class="socialmedia-footer__link" href="https://www.linkedin.com/" aria-label="Linkedin">
+                                    <svg class="socialmedia-footer__icon" width="20" height="20">
+                                        <use href="./images/icons-sprite.svg#icon-linkedin-grey"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <!-- Социальные сети -->
-                <div class="socialmedia-footer">
-                    <h2 class="socialmedia-footer__heading">Присоединяйтесь</h2>
-                    <ul class="socialmedia-footer__list list"> 
-                        <li class="socialmedia-footer__item">
-                            <a class="socialmedia-footer__link" href="https://www.instagram.com/" aria-label="Instagram">
-                                <svg class="socialmedia-footer__icon" width="20" height="20">
-                                    <use href="./images/icons-sprite.svg#icon-instagram-grey"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socialmedia-footer__item">
-                            <a class="socialmedia-footer__link" href="https://twitter.com/" aria-label="Twitter">
-                                <svg class="socialmedia-footer__icon" width="20" height="20">
-                                    <use href="./images/icons-sprite.svg#icon-twitter-grey"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socialmedia-footer__item">
-                            <a class="socialmedia-footer__link" href="https://www.facebook.com/" aria-label="Facebook">
-                                <svg class="socialmedia-footer__icon" width="20" height="20">
-                                    <use href="./images/icons-sprite.svg#icon-facebook-grey"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socialmedia-footer__item">
-                            <a class="socialmedia-footer__link" href="https://www.linkedin.com/" aria-label="Linkedin">
-                                <svg class="socialmedia-footer__icon" width="20" height="20">
-                                    <use href="./images/icons-sprite.svg#icon-linkedin-grey"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Подписка -->
-                <div class="subscription">
-                    <h2 class="subscription__heading">Подпишитесь на рассылку</h2>
-                    <form class="subscription__form">
-                        <label for="email">
-                            <input class="subscription__email" type="email" id="email" name="email"
+                    <!-- Подписка -->
+                    <div class="subscription">
+                        <h2 class="subscription__heading">Подпишитесь на рассылку</h2>
+                        <form class="subscription__form">
+                            <label for="email">
+                                <input class="subscription__email" type="email" id="email" name="email"
                             placeholder="E-mail">
-                        </label>
-                        <button class="subscription__button" type="submit">Подписаться &nbsp;
-                            <svg class="subscription__icon" width="24" height="24">
+                            </label>
+                            <button class="subscription__button" type="submit">Подписаться &nbsp;
+                                <svg class="subscription__icon" width="24" height="24">
                                 <use href="./images/icons-sprite.svg#icon-telega"></use>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
             </div>
     </footer>
 
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
                 <button class="modal__close-modal" data-modal-close type="button">
                     <svg class="modal__button-icon" width="11" height="11">
@@ -432,7 +446,7 @@
                 </form>
 
         </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
 </body>
