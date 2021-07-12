@@ -14,33 +14,81 @@
 </head>
 <body>
     <!-- Шапка страницы -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
+            
             <nav class="navigation"> 
-                <a href="./index.html" class="navigation__logo-web">Web<span class="navigation__logo-studio">Studio</span></a> -->
-
-                <!-- Навигация на другие страницы-->
-                <!-- <ul class="navigation__list list">
+                <a href="./index.html" class="navigation__logo-web">Web<span class="navigation__logo-studio">Studio</span></a>
+                <button type="button" class="navigation__button-menu" data-menu-open>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="navigation__icon-menu" href="./images/icons-sprite.svg#icon-menu" ></use>
+                    </svg>
+                </button>
+                
+            <!-- Навигация на другие страницы -->
+                <ul class="navigation__list list">
                     <li class="navigation__item navigation__item--active"><a href="/index.html" class="navigation__link  navigation__link--active link">Студия</a></li>
                     <li class="navigation__item"><a href="./portfolio.html" class="navigation__link  link">Портфолио</a></li>
                     <li class="navigation__item"><a href="#contacts" class="navigation__link link">Контакты</a></li>
                 </ul>
-            </nav> -->
+            </nav>
 
             <!-- Контакты -->
-            <!-- <div class="contacts-header">
+            <div class="contacts-header">
                 <ul class="contacts-header__list list">
                     <li class="contacts-header__item"><a class="contacts-header__link link" href="mailto:info@devstudio.com">
-                        <svg class="contacts-header__icon" width="16" height="12">
+                        <svg class="contacts-header__icon" width="14" height="14">
                             <use href="./images/icons-sprite.svg#icon-mail-grey"></use>
                         </svg>info@devstudio.com</a></li>
                     <li class="contacts-header__item"><a class="contacts-header__link link" href="tel:+380961111111">
-                        <svg class="contacts-header__icon" width="10" height="16">
+                        <svg class="contacts-header__icon" width="14" height="14">
                             <use href="./images/icons-sprite.svg#icon-phone-grey"></use>
                         </svg>+38 096 111 11 11</a></li>
                 </ul>
-            </div> -->
+            </div>
         </div>
+            <!-- Мобильное меню -->
+        <div class="mobile-menu is-hidden" id="mobile-menu" data-menu>
+            <button type="button" class="mobile-menu__button-close" data-menu-close>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="mobile-menu__icon-close" href="./images/icons-sprite.svg#icon-close" ></use>
+                </svg>
+            </button>
+    
+                <ul class="mobile-navigation list">
+                    <li class="mobile-navigation__item">
+                        <a class="mobile-navigation__link mobile-navigation__link--active link current" href="./index.html" >Студия</a>
+                    </li>
+                    <li class="mobile-navigation__item">
+                        <a class="mobile-navigation__link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-navigation__item">
+                        <a class="mobile-navigation__link link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contacts list">
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a >
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+                <ul class="mobile-media list">
+                    <li class="mobile-media__item">
+                      <a href="" class="mobile-media__link link">Instagram</a>
+                    </li>
+                    <li class="mobile-media__item">
+                      <a href="" class="mobile-media__link link">Twitter</a>
+                    </li>
+                    <li class="mobile-media__item">
+                      <a href="" class="mobile-media__link link">Facebook</a>
+                    </li>
+                    <li class="mobile-media__item">
+                      <a href="" class="mobile-media__link link">Facebook</a>
+                    </li>
+                  </ul>
+            </div>
     </header>
 
     <!--Главный контент-->
@@ -401,7 +449,7 @@
     </footer>
 
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
                 <button class="modal__close-modal" data-modal-close type="button">
                     <svg class="modal__button-icon" width="11" height="11">
@@ -446,8 +494,9 @@
                 </form>
 
         </div>
-    </div> -->
+    </div>
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
